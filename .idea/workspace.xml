@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added rest2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" afterDir="false" />
+    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added appium">
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ErrorScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/RegistrationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/RegistrationScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +74,8 @@
       <recent name="dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SplashTests.validateVersion">
-    <configuration name="DeleteCarByIdTests.deleteCarNegativeTest_wrongSerialNumber" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LoginTests.loginNegativeTest_wrongPassword">
+    <configuration name="LoginTests.loginNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -88,7 +88,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.rest.DeleteCarByIdTests.deleteCarNegativeTest_wrongSerialNumber&quot;" />
+            <option value="&quot;ui_mobile.LoginTests.loginNegativeTest_wrongPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -99,7 +99,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarByIdTests.deleteCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +112,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.rest.DeleteCarByIdTests.deleteCarPositiveTest&quot;" />
+            <option value="&quot;ui_mobile.LoginTests.loginPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +123,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetUserCarsTests.getUserCarNegativeTest_wrongURL" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationNegativeTest_WOCheckBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +136,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.rest.GetUserCarsTests.getUserCarNegativeTest_wrongURL&quot;" />
+            <option value="&quot;ui_mobile.RegistrationTests.registrationNegativeTest_WOCheckBox&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +147,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetUserCarsTests.getUserCarPositiveTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationNegativeTest_wrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api.rest.GetUserCarsTests.getUserCarPositiveTests&quot;" />
+            <option value="&quot;ui_mobile.RegistrationTests.registrationNegativeTest_wrongEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +171,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SplashTests.validateVersion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.SplashTests.validateVersion&quot;" />
+            <option value="&quot;ui_mobile.RegistrationTests.registrationPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SplashTests.validateVersion" />
-        <item itemvalue="Gradle.DeleteCarByIdTests.deleteCarNegativeTest_wrongSerialNumber" />
-        <item itemvalue="Gradle.DeleteCarByIdTests.deleteCarPositiveTest" />
-        <item itemvalue="Gradle.GetUserCarsTests.getUserCarNegativeTest_wrongURL" />
-        <item itemvalue="Gradle.GetUserCarsTests.getUserCarPositiveTests" />
+        <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
+        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_WOCheckBox" />
+        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongEmail" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726078883233</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added appium">
+      <option name="closed" value="true" />
+      <created>1727029909196</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727029909196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +262,7 @@
     <MESSAGE value="added AddNewCarTestsOkHttp" />
     <MESSAGE value="added rest" />
     <MESSAGE value="added rest2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rest2" />
+    <MESSAGE value="added appium" />
+    <option name="LAST_COMMIT_MESSAGE" value="added appium" />
   </component>
 </project>
