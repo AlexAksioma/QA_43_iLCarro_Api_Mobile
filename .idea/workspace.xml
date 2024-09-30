@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added appium">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ErrorScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" afterDir="false" />
+    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added login">
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/RegistrationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/RegistrationScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,55 @@
       <recent name="dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.loginNegativeTest_wrongPassword">
+  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarPositiveTest">
+    <configuration name="AddNewCarTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_mobile.AddNewCarTests.addNewCarPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginTests.loginNegativeTest_usernameEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ui_mobile.LoginTests.loginNegativeTest_usernameEmpty&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="LoginTests.loginNegativeTest_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,61 +194,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationNegativeTest_wrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_mobile.RegistrationTests.registrationNegativeTest_wrongEmail&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ui_mobile.RegistrationTests.registrationPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
+        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest" />
         <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
+        <item itemvalue="Gradle.LoginTests.loginNegativeTest_usernameEmpty" />
+        <item itemvalue="Gradle.LoginTests.loginNegativeTest_wrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_WOCheckBox" />
-        <item itemvalue="Gradle.RegistrationTests.registrationNegativeTest_wrongEmail" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727029909196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added login">
+      <option name="closed" value="true" />
+      <created>1727288442290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727288442290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -263,6 +270,7 @@
     <MESSAGE value="added rest" />
     <MESSAGE value="added rest2" />
     <MESSAGE value="added appium" />
-    <option name="LAST_COMMIT_MESSAGE" value="added appium" />
+    <MESSAGE value="added login" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login" />
   </component>
 </project>
