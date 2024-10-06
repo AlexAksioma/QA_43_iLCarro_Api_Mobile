@@ -35,11 +35,18 @@ public class CarDto {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CarDto carDto = (CarDto) o;
-        return seats == carDto.seats && Double.compare(pricePerDay, carDto.pricePerDay) == 0 && Double.compare(lat, carDto.lat) == 0 && Double.compare(lng, carDto.lng) == 0 && Objects.equals(serialNumber, carDto.serialNumber) && Objects.equals(manufacture, carDto.manufacture) && Objects.equals(model, carDto.model) && Objects.equals(year, carDto.year) && Objects.equals(fuel, carDto.fuel) && Objects.equals(carClass, carDto.carClass) && Objects.equals(about, carDto.about) && Objects.equals(city, carDto.city) && Objects.equals(image, carDto.image) && Objects.equals(owner, carDto.owner) && Objects.equals(bookedPeriods, carDto.bookedPeriods);
+        return seats == carDto.seats
+                && Double.compare(pricePerDay, carDto.pricePerDay) == 0
+                && Objects.equals(serialNumber, carDto.serialNumber)
+                && Objects.equals(manufacture, carDto.manufacture)
+                && Objects.equals(model, carDto.model)
+                && Objects.equals(year, carDto.year)
+                && Objects.equals(fuel, carDto.fuel)
+                && Objects.equals(carClass, carDto.carClass)
+                && Objects.equals(about, carDto.about)
+                && Objects.equals(city, carDto.city)
+               ;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(serialNumber, manufacture, model, year, fuel, seats, carClass, pricePerDay, about, city, lat, lng, image, owner, bookedPeriods);
-    }
+
 }

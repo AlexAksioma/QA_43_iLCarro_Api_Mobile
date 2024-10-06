@@ -1,5 +1,6 @@
 package screens;
 
+import config.AppiumConfig;
 import dto.CarDto;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
@@ -10,6 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import static config.AppiumConfig.*;
 
 public class AddNewCarScreen extends BaseScreen {
     public AddNewCarScreen(AppiumDriver<AndroidElement> driver) {
@@ -47,8 +50,8 @@ public class AddNewCarScreen extends BaseScreen {
         fieldPrice.sendKeys(car.getPricePerDay() + "");
         fieldCarClass.sendKeys(car.getCarClass());
         //====================================
-        int height = driver.manage().window().getSize().getHeight();
-        int width = driver.manage().window().getSize().getWidth();
+        //int height = driver.manage().window().getSize().getHeight();
+        ///int width = driver.manage().window().getSize().getWidth();
         System.out.println(height + "X" + width);
         TouchAction<?> touchAction = new TouchAction<>(driver);
         touchAction.longPress(PointOption.point(width / 100, height / 4 * 3))
@@ -76,5 +79,10 @@ public class AddNewCarScreen extends BaseScreen {
     public MyCarsScreen clickBtnAddCar(){
         btnAddCar.click();
         return new MyCarsScreen(driver);
+    }
+
+    public ErrorScreen clickBtnAddCarNegative() {
+        btnAddCar.click();
+        return new ErrorScreen(driver);
     }
 }

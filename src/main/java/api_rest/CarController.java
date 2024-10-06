@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 
 public class CarController implements BaseApi {
 
-    TokenDto tokenDto;
+    public TokenDto tokenDto;
 
     RequestSpecification requestSpecification;
 

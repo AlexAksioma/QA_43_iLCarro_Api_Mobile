@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added login">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewCarScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/MyCarsScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added add new car test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_43/QA_43_iLCarro_Api_Mobile&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_44/HomeWorks/QA44_iLCarro_vvainshtok&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -261,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727288442290</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added add new car test">
+      <option name="closed" value="true" />
+      <created>1727679770032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727679770032</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,6 +274,7 @@
     <MESSAGE value="added rest2" />
     <MESSAGE value="added appium" />
     <MESSAGE value="added login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login" />
+    <MESSAGE value="added add new car test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add new car test" />
   </component>
 </project>
