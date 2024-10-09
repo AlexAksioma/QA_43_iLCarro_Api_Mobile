@@ -34,4 +34,9 @@ public class BaseScreen {
             return false;
         }
     }
+
+    public void clickWait(AndroidElement element, int time){
+        new WebDriverWait(driver, time)
+                .until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
 }

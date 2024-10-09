@@ -12,15 +12,15 @@ import java.net.URL;
 
 public class AppiumConfig {
     public static AppiumDriver<AndroidElement> driver;
-    public static int height=0, width=0;
+    public static int height = 0, width = 0;
 
-//      "platformName": "Android",
+    //      "platformName": "Android",
 //              "deviceName": "Nex5",
 //              "platformVersion": "8.0",
 //              "appPackage": "com.telran.ilcarro",
 //              "appActivity": ".SplashActivity"
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("deviceName", "Nex5");
@@ -40,7 +40,7 @@ public class AppiumConfig {
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         //driver.quit();
     }
 
