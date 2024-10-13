@@ -33,7 +33,7 @@ public class LoginTestsRest extends AuthenticationController {
 
     @Test
     public void loginNegativeTest_wrongPassword() {
-        user.setPassword("password");
+        user.setPassword("password1");
         Response response = registrationLogin(user, LOGIN_URL);
         Assert.assertEquals(response.getStatusCode(), 401);
     }

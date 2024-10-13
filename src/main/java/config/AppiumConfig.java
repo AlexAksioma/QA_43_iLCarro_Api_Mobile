@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-
+import static helper.PropertiesReader.getProperty;
 public class AppiumConfig {
     public static AppiumDriver<AndroidElement> driver;
     public static int height = 0, width = 0;
@@ -19,14 +19,19 @@ public class AppiumConfig {
 //              "platformVersion": "8.0",
 //              "appPackage": "com.telran.ilcarro",
 //              "appActivity": ".SplashActivity"
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup() {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("platformName", "Android");
-        desiredCapabilities.setCapability("deviceName", "Nex5");
-        desiredCapabilities.setCapability("platformVersion", "8.0");
-        desiredCapabilities.setCapability("appPackage", "com.telran.ilcarro");
-        desiredCapabilities.setCapability("appActivity", ".SplashActivity");
+//        desiredCapabilities.setCapability("platformName", "Android");
+//        desiredCapabilities.setCapability("deviceName", "Nex5");
+//        desiredCapabilities.setCapability("platformVersion", "8.0");
+//        desiredCapabilities.setCapability("appPackage", "com.telran.ilcarro");
+//        desiredCapabilities.setCapability("appActivity", ".SplashActivity");
+        desiredCapabilities.setCapability("platformName", getProperty("mobile.properties", "platformName"));
+        desiredCapabilities.setCapability("deviceName",  getProperty("mobile.properties", "deviceName"));
+        desiredCapabilities.setCapability("platformVersion",  getProperty("mobile.properties", "platformVersion"));
+        desiredCapabilities.setCapability("appPackage",  getProperty("mobile.properties", "appPackage"));
+        desiredCapabilities.setCapability("appActivity",  getProperty("mobile.properties", "appActivity"));
 
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 
@@ -39,9 +44,9 @@ public class AppiumConfig {
         width = driver.manage().window().getSize().getWidth();
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
 }

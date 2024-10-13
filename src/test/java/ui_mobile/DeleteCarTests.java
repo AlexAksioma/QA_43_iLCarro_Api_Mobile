@@ -12,15 +12,16 @@ import screens.MyCarsScreen;
 import screens.SplashScreen;
 
 import static helper.ReturnCarsDtoApi.returnCarsDto;
+import static helper.PropertiesReader.getProperty;
 
 public class DeleteCarTests extends AppiumConfig {
     MyCarsScreen myCarsScreen;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("0bagginsbob@mail.com")
-                .password("Qwerty123!")
+                .username(getProperty("login.properties", "email"))
+                .password(getProperty("login.properties","password"))
                 .build();
         myCarsScreen = new SplashScreen(driver)
                 .goToSearchScreen()
@@ -33,7 +34,7 @@ public class DeleteCarTests extends AppiumConfig {
         ;
     }
 
-    @Test
+    @Test(groups = "positive")
     public void deleteCarPositiveTest() {
         int quantityCars = 0, quantityAfterDelete = 0;
         CarController carController = new CarController();

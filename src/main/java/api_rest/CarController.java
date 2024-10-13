@@ -11,6 +11,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeSuite;
 
 import static io.restassured.RestAssured.given;
+import static helper.PropertiesReader.getProperty;
 
 public class CarController implements BaseApi {
 
@@ -21,8 +22,10 @@ public class CarController implements BaseApi {
     @BeforeSuite
     public void login() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("0bagginsbob@mail.com")
-                .password("Qwerty123!")
+                //.username("0bagginsbob@mail.com")
+                //.password("Qwerty123!")
+                .username(getProperty("login.properties", "email"))
+                .password(getProperty("login.properties", "password"))
                 .build();
         tokenDto = given()
                 .body(user)

@@ -13,7 +13,7 @@ public class LoginTests extends AppiumConfig {
 
     LoginScreen loginScreen;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openScreenLogin() {
         loginScreen = new SplashScreen(driver)
                 .goToSearchScreen()
@@ -21,7 +21,7 @@ public class LoginTests extends AppiumConfig {
                 .clickBtnLogin();
     }
 
-    @Test
+    @Test(groups = "positive")
     public void loginPositiveTest() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username("0bagginsbob@mail.com")

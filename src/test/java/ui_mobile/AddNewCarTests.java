@@ -15,14 +15,16 @@ import screens.SplashScreen;
 
 import java.util.Random;
 
+import static helper.PropertiesReader.getProperty;
+
 public class AddNewCarTests extends AppiumConfig {
     SearchScreen searchScreen;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
-                .username("0bagginsbob@mail.com")
-                .password("Qwerty123!")
+                .username(getProperty("login.properties", "email"))
+                .password(getProperty("login.properties","password"))
                 .build();
         searchScreen = new SplashScreen(driver)
                 .goToSearchScreen()
@@ -33,7 +35,7 @@ public class AddNewCarTests extends AppiumConfig {
         ;
     }
 
-    @Test
+    @Test(groups = "positive")
     public void addNewCarPositiveTest() {
         int i = new Random().nextInt(1000) + 1000;
         CarDto car = CarDto.builder()
@@ -57,7 +59,7 @@ public class AddNewCarTests extends AppiumConfig {
         ;
     }
 
-    @Test
+    @Test(groups = "positive")
     public void addNewCarPositiveTestValidateWithRest() {
         int i = new Random().nextInt(1000) + 1000;
         CarDto car = CarDto.builder()

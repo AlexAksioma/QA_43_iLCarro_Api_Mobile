@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="suite2" verbose="1">
+    <test name="positivetests">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ui_mobile.RegistrationTests"/>
+            <class name="ui_mobile.LoginTests"/>
+            <class name="ui_mobile.DeleteCarTests"/>
+            <class name="ui_mobile.AddNewCarTests"/>
+        </classes>
+    </test>
+</suite>
