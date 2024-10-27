@@ -27,6 +27,7 @@ dependencies {
 
     implementation 'io.rest-assured:rest-assured:4.5.1'
     //implementation 'com.jayway.restassured:rest-assured:2.9.0'   //add
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
 }
 
 test {

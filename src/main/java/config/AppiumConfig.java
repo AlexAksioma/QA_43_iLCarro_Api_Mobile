@@ -1,9 +1,14 @@
 package config;
 
+import helper.AppiumWDListener;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.events.EventFiringWebDriverFactory;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -14,6 +19,8 @@ public class AppiumConfig {
     public static AppiumDriver<AndroidElement> driver;
     public static int height = 0, width = 0;
 
+    public Logger logger = LoggerFactory.getLogger(AppiumConfig.class);
+
     //      "platformName": "Android",
 //              "deviceName": "Nex5",
 //              "platformVersion": "8.0",
@@ -21,6 +28,7 @@ public class AppiumConfig {
 //              "appActivity": ".SplashActivity"
     @BeforeMethod(alwaysRun = true)
     public void setup() {
+        logger.info("start testing");
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 //        desiredCapabilities.setCapability("platformName", "Android");
 //        desiredCapabilities.setCapability("deviceName", "Nex5");
@@ -37,11 +45,13 @@ public class AppiumConfig {
 
         try {
             driver = new AppiumDriver<>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
+            driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver, new AppiumWDListener());
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
         height = driver.manage().window().getSize().getHeight();
         width = driver.manage().window().getSize().getWidth();
+
     }
 
     @AfterMethod(alwaysRun = true)

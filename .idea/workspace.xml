@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="delete car test">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helper/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/positive_tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/login.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/mobile.properties" afterDir="false" />
+    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api_rest/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/rest/LoginTestsRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/AddNewCarTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/DeleteCarTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/RegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_mobile/SplashTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +54,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/QA_Auto_Projects/QA_43/QA_43_iLCarro_Api_Mobile"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_44/QA_44_PhoneBook&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="enums" />
@@ -297,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728497997205</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added properties">
+      <option name="closed" value="true" />
+      <created>1728844054311</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728844054311</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -310,6 +302,7 @@
     <MESSAGE value="added add new car test" />
     <MESSAGE value="started DeleteCarTests" />
     <MESSAGE value="delete car test" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete car test" />
+    <MESSAGE value="added properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="added properties" />
   </component>
 </project>

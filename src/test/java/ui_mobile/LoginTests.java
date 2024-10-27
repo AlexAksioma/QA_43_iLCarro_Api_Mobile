@@ -2,13 +2,18 @@ package ui_mobile;
 
 import config.AppiumConfig;
 import dto.RegistrationBodyDto;
+import helper.TestNGListener;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import screens.LoginScreen;
 import screens.SearchScreen;
 import screens.SplashScreen;
 
+import java.lang.reflect.Method;
+
+@Listeners(TestNGListener.class)
 public class LoginTests extends AppiumConfig {
 
     LoginScreen loginScreen;
@@ -22,11 +27,12 @@ public class LoginTests extends AppiumConfig {
     }
 
     @Test(groups = "positive")
-    public void loginPositiveTest() {
+    public void loginPositiveTest(Method method) {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
                 .username("0bagginsbob@mail.com")
                 .password("Qwerty123!")
                 .build();
+        logger.info("start test --> " + method.getName() + " with data: " + user.toString());
         Assert.assertTrue(loginScreen.typeLoginForm(user)
                 .clickBtnLoginPositive()
                 .textInElementPresent_popUpMessageSuccess("Login success!"))
@@ -44,6 +50,7 @@ public class LoginTests extends AppiumConfig {
                 .validateErrorMessage("Login or Password incorrect"))
         ;
     }
+
     @Test
     public void loginNegativeTest_usernameEmpty() {
         RegistrationBodyDto user = RegistrationBodyDto.builder()
