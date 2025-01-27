@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added properties">
+    <list default="true" id="0a0c301b-1bd8-4004-8c50-4f233beb3619" name="Changes" comment="added logger, listeners">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SearchScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,46 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_44/QA_44_PhoneBook&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/QA_Auto_Projects/QA_45/QA_45_MobileiLCarroRest"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="enums" />
       <recent name="dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteCarTests.deleteCarPositiveTest">
-    <configuration name="AddNewCarTests.addNewCarPositiveTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;api.rest.AddNewCarTests.addNewCarPositiveTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositiveTest">
     <configuration name="AddNewCarTests.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,7 +96,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +109,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.DeleteCarTests&quot;" />
+            <option value="&quot;ui_mobile.LoginTests.loginPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +120,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarTests.deleteCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +133,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.DeleteCarTests.deleteCarPositiveTest&quot;" />
+            <option value="&quot;ui_mobile.RegistrationTests.registrationPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,7 +144,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarTests.deleteCarPositiveTest_HelperApi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SplashTests.validateVersion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ui_mobile.DeleteCarTests.deleteCarPositiveTest_HelperApi&quot;" />
+            <option value="&quot;ui_mobile.SplashTests.validateVersion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,14 +167,24 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
       <method v="2" />
+    </configuration>
+    <configuration name="C:/QA_Auto_Projects/QA_43/QA_43_iLCarro_Api_Mobile/src/test/resources/positive_tests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_43_iLCarro_Api_Mobile.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/positive_tests.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
+        <item itemvalue="Gradle.SplashTests.validateVersion" />
         <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.AddNewCarTests.addNewCarPositiveTest (1)" />
-        <item itemvalue="Gradle.DeleteCarTests.deleteCarPositiveTest_HelperApi" />
-        <item itemvalue="Gradle.DeleteCarTests" />
+        <item itemvalue="Gradle.LoginTests.loginPositiveTest" />
+        <item itemvalue="TestNG.C:/QA_Auto_Projects/QA_43/QA_43_iLCarro_Api_Mobile/src/test/resources/positive_tests.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728844054311</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added logger, listeners">
+      <option name="closed" value="true" />
+      <created>1730056979858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730056979858</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -303,6 +299,7 @@
     <MESSAGE value="started DeleteCarTests" />
     <MESSAGE value="delete car test" />
     <MESSAGE value="added properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="added properties" />
+    <MESSAGE value="added logger, listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logger, listeners" />
   </component>
 </project>

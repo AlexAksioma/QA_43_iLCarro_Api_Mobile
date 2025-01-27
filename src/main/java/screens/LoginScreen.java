@@ -22,7 +22,8 @@ public class LoginScreen extends  BaseScreen{
         return this;
     }
     public SearchScreen clickBtnLoginPositive(){
-        btnLogin.click();
+        //btnLogin.click();
+        clickWait(btnLogin, 5);
         return new SearchScreen(driver);
     }
 

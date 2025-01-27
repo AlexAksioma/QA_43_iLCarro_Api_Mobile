@@ -21,7 +21,8 @@ public class SearchScreen extends BaseScreen {
     AndroidElement popUpMessageSuccess;
 
     public SearchScreen clickBtnDots() {
-        btnDots.click();
+        //btnDots.click();
+        clickWait(btnDots, 5);
         return this;
     }
     public RegistrationScreen clickBtnRegistration(){
